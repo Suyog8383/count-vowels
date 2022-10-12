@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function countVowels(name) {
+    let count1 = 0;
+    let count2 = 0;
+    let count3 = 0;
+    let count4 = 0;
+    let count5 = 0;
+    for (let i = name.length; i >= 0; i--) {
+      let ch = name.charAt(i);
+      if (ch === "A" || ch === "a") {
+        count1++;
+      } else if (ch === "E" || ch === "e") {
+        count2++;
+      } else if (ch === "I" || ch === "i") {
+        count3++;
+      } else if (ch === "O" || ch === "o") {
+        count4++;
+      } else if (ch === "U" || ch === "u") {
+        count5++;
+      }
+    }
+    console.log("A:", count1);
+    console.log("E:", count2);
+    console.log("I:", count3);
+    console.log("O:", count4);
+    console.log("U:", count5);
+  }
+  countVowels("iamsuyognagawade");
+</script>
